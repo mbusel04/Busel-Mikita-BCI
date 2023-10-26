@@ -6,28 +6,14 @@ Also `MatrixService` includes the additional method `getMatrixMaT(mat)` which re
 
 After the compilation of most essential methods of `MatrixService` are run through a series of unit tests with the use of `testMatrixService.cpp`, which failure cases will announced to the user right after the compilation process is finished. 
 
-In addition to the main functionality code, the repository includes the `demoMatrixService.cpp` file in order to give a user a chance to try out the capabilities of a library in practice. 
+In addition to the main functionality code, the repository includes the `demoMatrixService.cpp` file to give a user a chance to try out the capabilities of a library in practice. 
 
 ## Compilation And Run
 
 Here are brief instructions on how to compile the library and demo, as well as to run it. 
 
-\**Note: Code will ask the user to type in entries of the matrix, inputted elements by the user will fill up the matrix from left to right and top to bottom. *
-* The program would not stop until it receives the minimum quantity of elements to fill up the matrix. Any extra elements input by the user will be ignored. *
-* User can input elements as long as they are separated by space or newline.*
-* Input examples: *
-```bash
-Type in the 6 entries of matrix:
-1 2 3 4 5 6
-# Valid input.
-# ~~~
-Type in the 6 entries of matrix:
-1 
-2 3
-4 5 6
-# Also valid input, which will lead to the same matrix input.
-```
-
+\**Note: Maximum sizes of the matrices are limited in the code **before** compilation, you can change through constant `MAT_MAX_SIZE` in the `MatrixService.h` file. *
+* So in order to avoid excessive memory occupation, choose a reasonable value for required computations.*
 
 Execute `run.sh` in order to launch the demo:
 ```bash
@@ -43,4 +29,20 @@ make
 In order to run the compiled program:
 ```bash
 ./demo.out
+```
+
+\**Note: Code will ask the user to type in entries of the matrix, inputted elements by the user will fill up the matrix from left to right and top to bottom. *
+* The program would not stop until it receives the minimum quantity of elements to fill up the matrix. Any extra elements input by the user will be ignored. *
+* User can input elements as long as they are separated by space or newline.*
+* Input examples: *
+```bash
+Type in the 6 entries of matrix:
+1 2 3 4 5 6
+# Valid input.
+# ~~~
+Type in the 6 entries of matrix:
+1 
+2 3
+4 5 6
+# Also valid input, which will lead to the same matrix input.
 ```
