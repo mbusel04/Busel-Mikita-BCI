@@ -75,6 +75,10 @@ void testMultiplication() {
     IS_TRUE(output2 == MS->multiplyMatrices(input3,input4));
 }
 
+/**
+ * @test
+ * Checks for method which multiplies matrix by it's own transpose.
+*/
 void testMaT() {
     double inputArr1[] = {};
     MatrixStruct input1 = MS->createMatrixFromArray(inputArr1, 0, 0);

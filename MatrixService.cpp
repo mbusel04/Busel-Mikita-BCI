@@ -13,7 +13,9 @@
  * 
  * @param rhs (Right Hand Side) of comparison operation.
  * @return true value in case if dimensions m & n are equal and 2D array of the objects have same entries, otherwise returns false.
- * 
+ *
+ * Estimated Time Complexity:
+ *      ~ in O(mn); 
 */
  bool MatrixStruct::operator==(const MatrixStruct& rhs)
  {
@@ -67,6 +69,9 @@ MatrixService *MatrixService::GetInstance()
  * @param n quantity of columns in the created matrix.
  * 
  * @return New MatrixStruct of m x n dimension and all entries of 2D array equal 0.
+ * 
+ * Estimated Time Complexity:
+ *      ~ in O(mn); 
 */
 MatrixStruct MatrixService::createEmptyMatrix(unsigned short m, unsigned short n)
 {   
@@ -88,7 +93,7 @@ MatrixStruct MatrixService::createEmptyMatrix(unsigned short m, unsigned short n
 
 /**
  * Creates new MatrisStruct object of size m x n and fills up all it's entries with first m*n values of input 1D array.
- * Algorithm fills up rows of the matrix first. 
+ * Algorithm fills up matrix row by row, from left to right, top to bottom.
  * So 3 x 4 matrix with input array = {1,2,3,...,11,12} will be filled up like example below:
  * | 1  2   3   4  |
  * | 5  6   7   8  |
@@ -100,6 +105,9 @@ MatrixStruct MatrixService::createEmptyMatrix(unsigned short m, unsigned short n
  * @param n quantity of columns in the created matrix.
  * 
  * @return New MatrixStruct of m x n dimension and all entries of 2D array filled with input 1D array entries.
+ * 
+ * Estimated Time Complexity:
+ *      ~ in O(mn); 
 */
 MatrixStruct MatrixService::createMatrixFromArray(double arr[], unsigned short m, unsigned short n) 
 {
@@ -132,6 +140,9 @@ MatrixStruct MatrixService::createMatrixFromArray(double arr[], unsigned short m
  * @param mat input matrix of MatrixStruct type.
  * 
  * @return New MatrixStruct which is a transpose of input matrix.
+ * 
+ * Estimated Time Complexity:
+ *      ~ in O(mn); 
 */
 MatrixStruct MatrixService::getTranspose(MatrixStruct mat)
 {
@@ -159,6 +170,9 @@ MatrixStruct MatrixService::getTranspose(MatrixStruct mat)
  * 
  * @return New MatrixStruct with a dimensions of number of rows equal to number of columns of first input matrix x number of columns equal
  * to number of rows of second input matrix.
+ * 
+ * Estimated Time Complexity:
+ *      ~ in O(m^2*n); 
 */
 MatrixStruct MatrixService::multiplyMatrices(MatrixStruct mat1, MatrixStruct mat2) 
 { 
@@ -191,6 +205,9 @@ MatrixStruct MatrixService::multiplyMatrices(MatrixStruct mat1, MatrixStruct mat
  * @param mat input matrix of MatrixStruct type to be multiplied by it's transpose.
  * 
  * @return returns a product of input matrix and it's transpose.
+ * 
+ * Estimated Time Complexity:
+ *      ~ in O(m^3*n^2); 
 */
 MatrixStruct MatrixService::getMatrixMaT(MatrixStruct mat)
 {
@@ -203,6 +220,9 @@ MatrixStruct MatrixService::getMatrixMaT(MatrixStruct mat)
  * Prints out the matrix of MatrixStruct in a grid of size specified by internal variable of input object.
  * 
  * @param mat input matrix of MatrixStruct type to be printed out.
+ * 
+ * Estimated Time Complexity:
+ *      ~ in O(mn); 
 */
 void MatrixService::printMatrix(MatrixStruct mat)
 {

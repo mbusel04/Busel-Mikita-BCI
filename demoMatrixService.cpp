@@ -33,7 +33,7 @@ MatrixStruct getUserInputMatrix() {
     if (m > MAT_MAX_SIZE || n > MAT_MAX_SIZE) {
         throw std::invalid_argument("getUserInputMatrix: Out of bounds of maximum matrix dimensions!\n");
     }
-    cout << endl << "Type in the entries of matrix: \n";
+    cout << endl << "Type in the " << (m*n) << " entries of matrix: \n";
     double temparr[m*n];
     for(int i = 0; i < (m*n); i++)
     {
