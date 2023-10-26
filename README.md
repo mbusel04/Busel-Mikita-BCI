@@ -35,6 +35,7 @@ bash run.sh
 ```
 It will automatically compile the library, tests, and demo file. As well as will also start the demo after a small delay. 
 
+---
 In cases if the user wants only to compile the program without its immediate call:
 ```bash
 make
