@@ -12,8 +12,8 @@ In addition to the main functionality code, the repository includes the `demoMat
 
 Here are brief instructions on how to compile the library and demo, as well as to run it. 
 
-\**Note: Maximum sizes of the matrices are limited in the code **before** compilation, you can change through constant `MAT_MAX_SIZE` in the `MatrixService.h` file. *
-* So in order to avoid excessive memory occupation, choose a reasonable value for required computations.*
+\*_Note: Maximum sizes of the matrices are limited in the code **before** compilation, you can change through constant `MAT_MAX_SIZE` in the `MatrixService.h` file.
+  So in order to avoid excessive memory occupation, choose a reasonable value for required computations._
 
 Execute `run.sh` in order to launch the demo:
 ```bash
@@ -31,10 +31,10 @@ In order to run the compiled program:
 ./demo.out
 ```
 
-\**Note: Code will ask the user to type in entries of the matrix, inputted elements by the user will fill up the matrix from left to right and top to bottom. *
-* The program would not stop until it receives the minimum quantity of elements to fill up the matrix. Any extra elements input by the user will be ignored. *
-* User can input elements as long as they are separated by space or newline.*
-* Input examples: *
+\*_Note: Code will ask the user to type in entries of the matrix, inputted elements by the user will fill up the matrix from left to right and top to bottom.
+  The program would not stop until it receives the minimum quantity of elements to fill up the matrix. Any extra elements input by the user will be ignored.
+  User can input elements as long as they are separated by space or newline.
+  Input examples:_
 ```bash
 Type in the 6 entries of matrix:
 1 2 3 4 5 6
